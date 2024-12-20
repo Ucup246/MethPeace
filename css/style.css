@@ -1,36 +1,304 @@
+html {
+    scroll-behavior: smooth; /* Efek scroll bergulir dengan halus */
+  }
+
 .main-header {
     display: flex;
     justify-content: space-between;
 }
 
-.home-icon {
-    border: 1px solid;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    padding: 17px;
-    background-size: cover;
-    background-position: center;
-}
-
-.navigation {
+nav {
     display: flex;
     align-items: center;
 }
 
-.navigation > a {
-    text-decoration: none;
-    color: black;
+nav > a {
+    border: 1px solid;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-right: 16px;
     padding-left: 16px;
-    border: 1px solid;
+    padding-right: 16px;
+    text-decoration: none;
+    color: black;
 }
 
-.header-title {
+.navi:hover {
+    background-color: burlywood;
+    transition: .5s;
+    transition-delay: ease-in-out;
+}
+
+.header-h13 {
     text-align: center;
-    font-family: Helvetica;
-    font-weight: bolder;
-    font-size: larger;
+}
+
+
+.home-icon {
+    background-image: url(https://picsum.photos/200);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.banner-img {
+    height: 360px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container {
+    display: flex;
+    gap: 24px;
+}
+
+.main-item {
+    flex: 1;
+}
+
+/* form */
+
+form{
+    background-color: aliceblue;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+.p-form {
+    text-align: center;
+}
+
+.main-form {
+    margin-left: 30px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+/* end-form */
+
+
+
+.img-alex {
+    border-radius: 50px;
+}
+
+.detail-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nama {
+    margin: 0px;
+}
+
+.deskripsi {
+    margin: 5px 0 0;
+}
+
+.numbers {
+    padding-bottom: 200px;
+    padding-right: 2px;
+    margin-top: 38px;
+}
+
+.pertama {
+    display: flex;
+    margin-left: 24px;
+}
+
+.gambar-angka1 {    /*entah kenapa gambar nya gak mau masuk di lingkaran */
+    background-size: cover;
+    border: 1px solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    top: 11px;
+    left: 8px;
+    position: relative;
+}
+
+.p-1 {
+    position: relative;
+    left: 29px;
+}
+
+.gambar-angka2 {
+    border: 1px solid;
+    border-radius: 30px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 57px;
+    right: 443px;
+}
+
+.p-2 {
+    position: absolute;
+    top: 834px;
+    left: 91px;
+}
+
+.gambar-angka3 {
+    border: 1px solid;
+    border-radius: 30px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 103px;
+    right: 474px;
+}
+
+.p-3 {
+    position: relative;
+    top: 94px;
+    right: 453px;
+}
+
+/* packages */
+
+.sec-container {
+    margin-bottom: 20px;
+}
+
+.header-container {
+    text-align: center;
+    font-size: 24px;
+}
+
+.article {
+    border: 1px solid;
+    height: 510px;
+    background-color: aliceblue;
+}
+
+.icon-lampu {
+border-radius: 38px;
+border: 1px solid;
+width: 45px;
+height: 45px;
+}
+
+.sec-pckg {
+    margin-bottom: 20px;
+}
+
+.Bali {
+    margin-left: 70px;
+    margin-top: -30px;
+}
+
+.desc-bali {
+    margin-left: 67px;
+    margin-top: 11px;
+}
+
+.japan {
+    margin-left: 70px;
+    margin-top: -30px;
+}
+
+.desc-japan {
+    margin-left: 67px;
+    margin-top: 11px;
+}
+
+.singapore {
+    margin-left: 70px;
+    margin-top: -30px;
+}
+
+.desc-singapore {
+    margin-left: 67px;
+    margin-top: 11px;
+}
+
+.bandung {
+    margin-left: 70px;
+    margin-top: -30px;
+}
+
+.desc-bandung {
+    margin-left: 67px;
+    margin-top: 11px;
+}
+
+.surabaya {
+    margin-left: 70px;
+    margin-top: -30px;
+}
+
+.desc-surabaya {
+    margin-left: 67px;
+    margin-top: 11px;
+}
+
+.third-feature {
+    margin-left: 70px;
+    margin-top: -30px;
+}
+
+.desc-feature {
+    margin-left: 67px;
+    margin-top: 11px;
+}
+
+/* closing */
+
+.closing {
+    background-color: aliceblue;
+    margin-bottom: 35px;
+}
+
+.p-close {
+    text-align: center;
+}
+
+#h2-closing-header {
+    text-align: center;
+}
+
+#calaction {
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 499px;
+    margin-top: 40px;
+}
+
+/* footer */
+
+.footer-end {
+    justify-content: center;
+    display: grid;
+}
+
+.di-end {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.di-end2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
